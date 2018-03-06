@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DocumentsMerger"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="DocsMerger" Height="350" Width="525">
     <Grid>
-        
+        <Button x:Name="MergeButton" Content="Merge" HorizontalAlignment="Left" Margin="161,181,0,0" VerticalAlignment="Top" Width="186" Click="MergeButton_Click"/>
+        <TextBox x:Name="PathTextBox" HorizontalAlignment="Left" Height="23" Margin="83,121,0,0" TextWrapping="Wrap" Text="Root path" VerticalAlignment="Top" Width="355" TextChanged="PathTextBox_TextChanged"/>
+        <Label x:Name="StatusLabel" Content="Waiting for user action" HorizontalAlignment="Left" Margin="175,241,0,0" VerticalAlignment="Top" Width="172"/>
+
     </Grid>
 </Window>
